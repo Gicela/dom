@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>The DOM</title>
+
+</head>
+
+<body>
+
+<h1>Experimenting with the DOM</h1>
+<P title="the start of a new para">The beginning</P>
+<div id="gallery">
+    <ul id="purchases">
+        <li><img src="/" alt="image one"></a>limes</li>
+        <li><img src="/" alt="image two"></a>oranges</li>
+        <li><img src="/" alt="image three"></a>bananas</li>
+    </ul>
+<p title="a gentle reminder"> This is a reminder!</p>
+</div>
+
+<script>
+var images = document.getElementsByTagName("img");
+
+for (var i=0; i < images.length; i++){
+    alert(images[i].getAttribute("alt"));
+
+}
+</script>
+</body>
+</html>
